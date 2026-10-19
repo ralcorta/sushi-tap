@@ -3,10 +3,11 @@
   --ink-soft: #3d4f6f;
   --salmon: #ff5f8f;
   --salmon-deep: #ff3d75;
-  --sky: #8fd6ff;
+  --sky: #b8e7ff;
   --sakura: #ffb3d1;
-  --peach: #ffe0b8;
+  --peach: #ffe8c8;
   --rice: #fff8fc;
+  --bg-bottom: #ffe8c8;
   --foam: rgba(255, 255, 255, 0.55);
   --glow: rgba(255, 95, 143, 0.4);
   --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
@@ -26,12 +27,14 @@ body {
   margin: 0;
   min-height: 100%;
   height: 100%;
+  background: var(--bg-bottom);
 }
 
 body {
   font-family: var(--font-body);
   color: var(--ink);
-  background: var(--sky);
+  background:
+    linear-gradient(160deg, #b8e7ff 0%, #d4f0ff 28%, #ffd0e4 62%, #ffe8c8 100%);
   -webkit-tap-highlight-color: transparent;
   user-select: none;
   overflow: hidden;
@@ -458,7 +461,12 @@ body {
   align-items: center;
   gap: 0.65rem;
   padding: 1rem 1.25rem calc(1rem + var(--safe-bottom));
-  background: linear-gradient(to top, rgba(255, 248, 252, 0.92) 50%, transparent);
+  background: linear-gradient(
+    to top,
+    rgba(255, 232, 200, 0.96) 40%,
+    rgba(255, 232, 200, 0.55) 70%,
+    transparent
+  );
   cursor: default;
 }
 
