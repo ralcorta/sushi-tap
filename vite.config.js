@@ -10,6 +10,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: [
         'fiorella.png',
+        'fiorella-start.png',
         'sushi.png',
         'icons/apple-touch-icon.png',
       ],

@@ -202,7 +202,7 @@ function render() {
         <div class="start-content">
           <img
             class="start-fio"
-            src="${BASE}fiorella.png"
+            src="${BASE}fiorella-start.png"
             alt="Fiorella"
             draggable="false"
           />
