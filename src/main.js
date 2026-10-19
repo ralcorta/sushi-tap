@@ -1,4 +1,16 @@
 import './style.css'
+import { registerSW } from 'virtual:pwa-register'
+
+registerSW({
+  immediate: true,
+  onRegisteredSW(_swUrl, registration) {
+    if (!registration) return
+    // Busca versiones nuevas mientras la app está abierta
+    setInterval(() => {
+      registration.update()
+    }, 60 * 1000)
+  },
+})
 
 const STORAGE_KEY = 'sushi-counter-v1'
 const EAT_DURATION_MS = 780
